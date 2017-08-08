@@ -1,0 +1,26 @@
+div {
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 0.25em 0;
+  width: 500px;
+}
+
+button {
+  background-color: lightgray;
+  border: none;
+  color: gray;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+button:focus {
+  outline: none;
+}
+
+p {
+  margin: 0.5em 1em;
+  color: gray;
+}
