@@ -16,8 +16,8 @@ export class ItemComponent implements OnInit, OnDestroy {
   constructor(private itemService: ItemService) { }
 
   ngOnInit() {
-    this.itemSubscription = this.itemService.$open.subscribe((item: Item) => {
-      this.item.isOpen = item.title === this.item.title;
+    this.itemSubscription = this.itemService.$visible.subscribe((item: Item) => {
+      this.item.isVisible = item.title === this.item.title;
     })
   }
 
@@ -27,7 +27,7 @@ export class ItemComponent implements OnInit, OnDestroy {
     }
   }
 
-  open() {
-    this.itemService.$open.next(this.item);
+  toggle() {
+    this.itemService.$visible.next(this.item);
   }
 }

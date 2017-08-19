@@ -5,7 +5,7 @@ import { Item } from './item';
 @Injectable()
 export class ItemService {
 
-  public $open = new Subject<Item>();
+  public $visible = new Subject<Item>();
 
   constructor() { }
 

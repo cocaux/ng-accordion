@@ -1,6 +1,6 @@
  <div>
-  <button (click)="open()">{{item.title}}</button>
-  <p *ngIf="item.isOpen">
+  <button (click)="toggle()">{{item.title}}</button>
+  <p *ngIf="item.isVisible">
     {{item.description}}
   </p>
 </div> 
